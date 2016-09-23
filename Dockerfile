@@ -21,6 +21,7 @@ FROM node:latest
 #CMD npm start
 
 RUN mkdir -p /usr/src/app
+COPY package.json usr/src/app/
 WORKDIR /usr/src/app
 
 #RUN npm install -g grunt-cli bower # add other tools that you use too, e.g. `gulp`
